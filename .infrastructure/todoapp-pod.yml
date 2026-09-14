@@ -8,7 +8,13 @@ metadata:
 spec:
   containers:
   - name: todoapp
-    image: ikulyk404/todoapp:3.0.0
+    image: hrechukhao/todoapp:3.2.0
+    imagePullPolicy: Always
+    env:
+    - name: SECRET_KEY
+      value: "@e2(yx)v&tgh3_s=0yja-i!dpebxsz^dg47x)-k&kq_3zf*9e*"
+    - name: DEBUG_VALUE
+      value: "TRUE"
     ports:
     - containerPort: 8080
     livenessProbe:
@@ -35,7 +41,13 @@ metadata:
 spec:
   containers:
   - name: todoapp
-    image: ikulyk404/todoapp:3.0.0
+    image: hrechukhao/todoapp:3.2.0
+    imagePullPolicy: Always
+    env:
+    - name: SECRET_KEY
+      value: "@e2(yx)v&tgh3_s=0yja-i!dpebxsz^dg47x)-k&kq_3zf*9e*"
+    - name: DEBUG_VALUE
+      value: "TRUE"
     ports:
     - containerPort: 8080
     livenessProbe:

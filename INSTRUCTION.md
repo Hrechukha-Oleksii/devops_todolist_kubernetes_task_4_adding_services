@@ -15,13 +15,13 @@
 
         kubectl apply -f clusterIp.yml
     
-    - Run Busyboxplus application pod from todoapp-pod.yml manifest:
+    - Run Busybox application pod from busybox.yml manifest:
 
         kubectl apply -f busybox.yml
 
     - Connect to the busybox app terminal:
 
-        kubectl -n todoapp exec -it busyboxplus -- sh
+        kubectl -n todoapp exec -it busybox -- sh
     
     - Calling a ClusterIP service DNS from a busybox container using http get request command.
 
